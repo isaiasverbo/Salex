@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salex | Em breve novo site</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-ico"/>
+    <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-image: url(bg-body.jpg);
+            font-family: 'David Libre', serif;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .rel {
+            position: relative;
+        }
+        
+        .small-12 {
+            width: 100%;
+            float: left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+
+        .logo {
+            padding-top: 40px;
+        }
+        span {
+            color: #b32024;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            font-size: 36px;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        footer {
+            width: 100%;
+            height: 276px;
+            float: left;
+            background-image: url(xadrez.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            -webkit-background-size: 90%;
+            background-size: 90%;
+        }
+        .vh {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        
+        <div class="small-12 center">
+            <h1 class="vh wow slideInDown logo">
+                <img src="logo.png" alt="Salex" width="200">
+            </h1>
+
+            <h2 class="vh wow fadeIn">
+                Em breve <span>novo site</span>
+            </h2>
+
+            <h1 class="vh wow zoomIn" data-wow-delay="0.3s">
+                <img src="ribbon.png" alt="Empresas do Grupo" width="300">
+            </h1>
+            
+            <ul>
+                <li class="vh wow fadeIn" data-wow-delay="0.5s">
+                    <img src="pbref.png" alt="" width="120">
+                </li>
+                <li class="vh wow fadeIn" data-wow-delay="1s">
+                    <img src="pbg.png" alt="" width="120">
+                </li>
+                <li class="vh wow fadeIn" data-wow-delay="1.5s">
+                    <img src="nordeste.png" alt="" width="200">
+                </li>
+                <li class="vh wow fadeIn" data-wow-delay="2s">
+                    <img src="emporio.png" alt="" width="180">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="queryloader2.min.js"></script>
+    <script src="wow.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            new QueryLoader2(document.querySelector("body"), {
+                barColor: "#b32024",
+                backgroundColor: "transparent",
+                percentage: true,
+                barHeight: 2,
+                minimumTime: 200,
+                fadeOutTime: 1000,
+                onComplete: function () {
+                    new WOW().init();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
